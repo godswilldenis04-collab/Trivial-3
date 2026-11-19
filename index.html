@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Pixel Code -->
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -12,16 +11,16 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1139036022019874');
+fbq('init', '1300776078931361');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1139036022019874&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1300776078931361&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=yes">
-  <title>Quick Challenge | Select Your Gender</title>
+  <title>Amazing Data Plans | Nigeria's Best Telecom Offers</title>
   <style>
     * {
       margin: 0;
@@ -183,77 +182,60 @@ src="https://www.facebook.com/tr?id=1139036022019874&ev=PageView&noscript=1"
       text-align: left;
     }
 
-    .challenge-sub {
-      font-size: 0.9rem;
-      color: #5A7184;
-      text-align: left;
-      margin-bottom: 20px;
-      font-weight: 500;
+    .network-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 28px;
     }
 
-    .question-text {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #1A2C3E;
-      margin: 20px 0 24px;
-      line-height: 1.3;
-      text-align: center;
-      background: #F8F9FC;
-      padding: 24px 18px;
-      border-radius: 20px;
-      border-left: 4px solid #F5A623;
-    }
-
-    .options-grid {
-      display: flex;
-      flex-direction: row;
-      gap: 16px;
-      margin: 20px 0 28px;
-    }
-
-    .option-btn {
-      flex: 1;
+    .network-btn {
       background: #F8F9FC;
       border: 1px solid #E9EDF2;
-      padding: 22px 12px;
+      padding: 16px 12px;
       border-radius: 20px;
       font-weight: 700;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       font-family: inherit;
       color: #2C3E50;
       transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
       cursor: pointer;
-      text-align: center;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 8px;
     }
 
-    .option-btn .emoji {
-      font-size: 2rem;
-      line-height: 1;
-    }
-
-    .option-btn:hover {
+    .network-btn:hover {
       background: #F1F3F7;
       border-color: #CBD5E1;
     }
 
-    .option-btn.selected {
+    .network-btn.selected {
       background: linear-gradient(135deg, #1A2C3E, #2C4A6E);
       color: #FFFFFF;
       border-color: #1A2C3E;
       box-shadow: 0 8px 20px -6px rgba(26, 44, 62, 0.3);
-      transform: translateY(-2px);
+      transform: translateY(-1px);
     }
 
-    .option-btn.selected .emoji {
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    .network-btn .check-mark {
+      display: none;
+      background: #2ECC71;
+      color: white;
+      font-size: 11px;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      border-radius: 50%;
+      text-align: center;
     }
 
-    .proceed-btn {
+    .network-btn.selected .check-mark {
+      display: inline-block;
+    }
+
+    .proceed-btn, .subscribe-btn {
       width: 100%;
       background: linear-gradient(135deg, #FFC107, #F5A623);
       border: none;
@@ -268,12 +250,12 @@ src="https://www.facebook.com/tr?id=1139036022019874&ev=PageView&noscript=1"
       box-shadow: 0 10px 24px -8px rgba(245, 166, 35, 0.4);
     }
 
-    .proceed-btn:hover {
+    .proceed-btn:hover, .subscribe-btn:hover {
       box-shadow: 0 12px 28px -6px rgba(245, 166, 35, 0.5);
       transform: translateY(-1px);
     }
 
-    .proceed-btn:active {
+    .proceed-btn:active, .subscribe-btn:active {
       transform: translateY(1px);
       box-shadow: 0 6px 14px -5px rgba(245, 166, 35, 0.4);
     }
@@ -370,31 +352,6 @@ src="https://www.facebook.com/tr?id=1139036022019874&ev=PageView&noscript=1"
       margin-bottom: 28px;
       font-size: 1rem;
       font-weight: 500;
-    }
-
-    .subscribe-btn {
-      width: 100%;
-      background: linear-gradient(135deg, #FFC107, #F5A623);
-      border: none;
-      padding: 16px 24px;
-      border-radius: 100px;
-      font-weight: 800;
-      font-size: 1.15rem;
-      color: #1A2C3E;
-      font-family: inherit;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      box-shadow: 0 10px 24px -8px rgba(245, 166, 35, 0.4);
-    }
-
-    .subscribe-btn:hover {
-      box-shadow: 0 12px 28px -6px rgba(245, 166, 35, 0.5);
-      transform: translateY(-1px);
-    }
-
-    .subscribe-btn:active {
-      transform: translateY(1px);
-      box-shadow: 0 6px 14px -5px rgba(245, 166, 35, 0.4);
     }
 
     .error-msg {
@@ -511,17 +468,6 @@ src="https://www.facebook.com/tr?id=1139036022019874&ev=PageView&noscript=1"
       .notification-icon {
         font-size: 0.7rem;
       }
-      .question-text {
-        font-size: 1.3rem;
-        padding: 20px 14px;
-      }
-      .option-btn {
-        padding: 18px 8px;
-        font-size: 1rem;
-      }
-      .option-btn .emoji {
-        font-size: 1.7rem;
-      }
     }
 
     footer {
@@ -541,102 +487,114 @@ src="https://www.facebook.com/tr?id=1139036022019874&ev=PageView&noscript=1"
   <div class="container">
     <div class="header">
       <div class="logo-area">
-        <div class="logo-icon"><span>🎯</span></div>
-        <div class="logo-text">Challenge<span style="color:#F5A623;">Hub</span>.fun</div>
+        <div class="logo-icon"><span>📡</span></div>
+        <div class="logo-text">Vibescape<span style="color:#F5A623;">hub</span>.com</div>
       </div>
       <div class="nav-links">
         <a href="#">Home</a>
-        <a href="#">Challenges</a>
-        <a href="#">Leaderboard</a>
+        <a href="#">Share Data</a>
+        <a href="#">5G Network</a>
       </div>
     </div>
 
     <div class="layout-spacer"></div>
 
-    <div id="challengeCard" class="card">
-      <div class="card-title">Trivial Challenge</div>
-      <div class="challenge-sub">Answer the question below to continue.</div>
-
-      <div class="question-text">Are you a male or female?</div>
-
-      <div class="options-grid" id="optionsGrid">
-        <button data-gender="male" class="option-btn">
-          <span class="emoji">👨</span>
-          <span>Male</span>
-        </button>
-        <button data-gender="female" class="option-btn">
-          <span class="emoji">👩</span>
-          <span>Female</span>
-        </button>
+    <div id="networkSelectionCard" class="card">
+      <div class="card-title">Select Your Mobile Carrier</div>
+      <div class="network-grid" id="networkGrid">
+        <button data-network="MTN" class="network-btn">MTN <span class="check-mark">✓</span></button>
+        <button data-network="Airtel" class="network-btn">Airtel <span class="check-mark">✓</span></button>
+        <button data-network="Glo" class="network-btn">Glo <span class="check-mark">✓</span></button>
+        <button data-network="9mobile" class="network-btn">9mobile <span class="check-mark">✓</span></button>
       </div>
-
-      <button id="proceedBtn" class="proceed-btn">Confirm →</button>
+      <button id="proceedBtn" class="proceed-btn">Proceed →</button>
       <div id="msgContainer"></div>
     </div>
 
     <div id="loadingCard" class="loading-card hidden">
       <div class="spinner"></div>
       <div class="loading-text">Please wait...</div>
-      <div class="sub-message" id="loadingSubMsg">Processing your answer...</div>
+      <div class="sub-message" id="loadingSubMsg">Checking eligibility for selected offer...</div>
     </div>
 
     <div class="layout-spacer"></div>
 
     <footer>
-      🎯 Quick challenge | Select one option
+      🇳🇬 Trusted by millions | Offer valid for limited period
     </footer>
   </div>
 
   <div id="successPopup" class="popup-overlay">
     <div class="popup-card">
       <div class="check-icon">✓</div>
-      <h2>Confirmed!</h2>
-      <p id="popupMessage">You selected Male.</p>
-      <button id="subscribeNowBtn" class="subscribe-btn">CONTINUE</button>
+      <h2>Congrats!</h2>
+      <p>You are qualified for this data offer.</p>
+      <button id="subscribeNowBtn" class="subscribe-btn">SUBSCRIBE NOW</button>
     </div>
   </div>
 
   <div class="live-notification-left" id="liveNotificationLeft">
     <div class="notification-toast" id="notificationToast">
       <span class="pulse-dot-left"></span>
-      <span class="notification-icon">✅</span>
-      <span class="notification-text" id="notifMessage">Adebayo completed the challenge</span>
+      <span class="notification-icon">📱</span>
+      <span class="notification-text" id="notifMessage">070××××8373 bought 5GB</span>
     </div>
   </div>
 
   <script>
     (function() {
-      const challengeCardDiv = document.getElementById('challengeCard');
+      const networkCardDiv = document.getElementById('networkSelectionCard');
       const loadingCardDiv = document.getElementById('loadingCard');
       const successPopup = document.getElementById('successPopup');
       const proceedButton = document.getElementById('proceedBtn');
       const subscribeBtn = document.getElementById('subscribeNowBtn');
+      const networkBtns = document.querySelectorAll('.network-btn');
       const msgContainer = document.getElementById('msgContainer');
       const notifMessageSpan = document.getElementById('notifMessage');
-      const optionsGrid = document.getElementById('optionsGrid');
-      const popupMessage = document.getElementById('popupMessage');
       
-      let selectedGender = null;
+      let selectedNetwork = null;
       let isProceeding = false;
 
-      // ---- Referral redirect URL (from original file) ----
-      const OFFER_REDIRECT_URL = "https:";
+      const OFFER_REDIRECT_URL = "https://126d68bf96f9.glow-thrive.net/?wid=161002&wid_hmac=a3b5c54c56ec5c2c1b4aec4df3b8d307&p=30126";
 
-      // ---- Live notification generator ----
-      const playersList = ["Adebayo", "Chiamaka", "Oluwaseun", "Ifeanyi", "Fatima", "Emeka", "Ngozi", "Tunde", "Blessing", "Victor", "Esther", "Daniel", "Grace", "Samuel", "Precious", "Michael", "Jennifer", "David", "Maryam", "John", "Uche", "Amina", "Peter", "Joy", "Kelvin", "Ruth", "Isaac", "Hauwa", "Chinedu"];
+      function generateMaskedPhoneNumber() {
+        const prefixes = ["070", "080", "081", "090", "091", "0703", "0806", "0813", "0905"];
+        const prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
+        let lastFour = Math.floor(Math.random() * 9000 + 1000);
+        if (prefix.length === 3) {
+          return `${prefix}××××${lastFour}`;
+        } else {
+          return `${prefix}××××${lastFour}`;
+        }
+      }
+
+      const buyersList = ["Adebayo", "Chiamaka", "Oluwaseun", "Ifeanyi", "Fatima", "Emeka", "Ngozi", "Tunde", "Blessing", "Victor", "Esther", "Daniel", "Grace", "Samuel", "Precious", "Michael", "Jennifer", "David", "Maryam", "John", "Uche", "Amina", "Peter", "Joy", "Kelvin", "Ruth", "Isaac", "Hauwa", "Chinedu"];
+      const networksList = ["MTN", "Airtel", "Glo", "9mobile"];
+      const dataSizes = ["1.5GB", "3GB", "5GB", "10GB", "15GB", "2GB Night", "6GB", "12GB"];
       
-      function generateNotification() {
-        const name = playersList[Math.floor(Math.random() * playersList.length)];
-        const gender = Math.random() > 0.5 ? "Male" : "Female";
-        const actions = [
-          `${name} selected ${gender}`,
-          `${name} completed the challenge`,
-          `${name} just answered`,
-          `${name} ✓ ${gender}`,
-          `${name} joined the challenge`,
-          `${name} picked ${gender}`
+      function generateShortPurchaseMessage() {
+        const randomPhone = generateMaskedPhoneNumber();
+        const useName = Math.random() > 0.5;
+        let namePart = "";
+        if (useName) {
+          const randomName = buyersList[Math.floor(Math.random() * buyersList.length)];
+          namePart = `${randomName} `;
+        }
+        const randomNetwork = networksList[Math.floor(Math.random() * networksList.length)];
+        const randomData = dataSizes[Math.floor(Math.random() * dataSizes.length)];
+        
+        const templates = [
+          `${namePart}${randomPhone} bought ${randomData} on ${randomNetwork}`,
+          `${randomPhone} • ${randomData} ${randomNetwork}`,
+          `📲 ${randomPhone} got ${randomData} (${randomNetwork})`,
+          `${randomPhone} ➕ ${randomData} ${randomNetwork}`,
+          `✨ ${randomPhone} • ${randomNetwork} ${randomData}`,
+          `${randomPhone} subscribed to ${randomData}`,
+          `🔥 ${randomPhone} - ${randomData} on ${randomNetwork}`,
+          `${randomPhone} just recharged ${randomData}`
         ];
-        let msg = actions[Math.floor(Math.random() * actions.length)];
+        
+        let msg = templates[Math.floor(Math.random() * templates.length)];
         if (msg.length > 45) msg = msg.substring(0, 42) + "...";
         return msg;
       }
@@ -646,7 +604,7 @@ src="https://www.facebook.com/tr?id=1139036022019874&ev=PageView&noscript=1"
       
       function updateSmallNotification() {
         if (!isNotifActive) return;
-        const freshMsg = generateNotification();
+        const freshMsg = generateShortPurchaseMessage();
         if (notifMessageSpan) {
           notifMessageSpan.innerText = freshMsg;
         }
@@ -681,62 +639,54 @@ src="https://www.facebook.com/tr?id=1139036022019874&ev=PageView&noscript=1"
           if (!rotationTimeout) startNotificationRotation();
         }
       });
-
-      // ---- Gender selection ----
-      const genderBtns = document.querySelectorAll('.option-btn');
-      genderBtns.forEach(btn => {
+      
+      networkBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
           e.preventDefault();
-          selectedGender = btn.getAttribute('data-gender');
-          genderBtns.forEach(b => b.classList.remove('selected'));
-          btn.classList.add('selected');
+          selectedNetwork = btn.getAttribute('data-network');
+          networkBtns.forEach(b => {
+            if(b.getAttribute('data-network') === selectedNetwork) {
+              b.classList.add('selected');
+            } else {
+              b.classList.remove('selected');
+            }
+          });
           msgContainer.innerHTML = '';
         });
       });
-
-      // ---- Proceed / confirm ----
+      
       proceedButton.addEventListener('click', (e) => {
         e.preventDefault();
         if (isProceeding) return;
         
-        if (!selectedGender) {
-          msgContainer.innerHTML = '<div class="error-msg">👆 Please select an option first</div>';
+        if (!selectedNetwork) {
+          msgContainer.innerHTML = '<div class="error-msg">📱 Select a network first (MTN, Airtel, Glo, 9mobile)</div>';
           return;
         }
         
         isProceeding = true;
-        challengeCardDiv.classList.add('hidden');
+        networkCardDiv.classList.add('hidden');
         loadingCardDiv.classList.remove('hidden');
-        document.getElementById('loadingSubMsg').innerText = 'Processing your answer...';
+        document.getElementById('loadingSubMsg').innerText = `Checking eligibility for ${selectedNetwork} offer...`;
         
         setTimeout(() => {
           loadingCardDiv.classList.add('hidden');
           successPopup.classList.add('active');
-          popupMessage.innerText = `You selected ${selectedGender === 'male' ? 'Male' : 'Female'}.`;
           isProceeding = false;
         }, 1200);
       });
       
-      // ---- Continue button in popup → redirect to referral link ----
       subscribeBtn.addEventListener('click', () => {
-        // Track Lead event with Pixel before redirect (optional but recommended)
-        if (typeof fbq === 'function') {
-          fbq('track', 'Lead');
-        }
         window.location.href = OFFER_REDIRECT_URL;
       });
       
-      // ---- Click outside popup ----
       successPopup.addEventListener('click', function(e) {
         if (e.target === successPopup) {
           successPopup.classList.remove('active');
-          challengeCardDiv.classList.remove('hidden');
-          selectedGender = null;
-          genderBtns.forEach(b => b.classList.remove('selected'));
-          msgContainer.innerHTML = '';
+          networkCardDiv.classList.remove('hidden');
         }
       });
-
+      
     })();
   </script>
 </body>
